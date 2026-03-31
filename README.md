@@ -3,7 +3,7 @@
 **[Interactive Dashboard on Power BI Service](https://app.powerbi.com/view?r=eyJrIjoiOTI0ZDM2ODgtOTg5NC00MTFkLTllYjUtZTQ0ZDBmZWE2NzFlIiwidCI6IjgwYjEwMzNmLTIxZTAtNGE4Mi1iYmMwLWYwNWZkY2NkM2JjOCIsImMiOjl9)** | **[Dataset Source](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)**
 
 ## Project Overview
-This repository contains the documentation, configuration files, and the `.pbix` source file for an end-to-end data analytics project. The project processes the Brazilian E-Commerce Public Dataset by Olist, moving from raw data storage in a PostgreSQL database to an interactive Power BI dashboard. The objective is to monitor core e-commerce metrics such sales performance and logistics.
+This repository contains the documentation, configuration files, and the `.pbix` source file for an end-to-end data analytics project. The project processes the Brazilian E-Commerce Public Dataset by Olist, moving from raw data storage in a PostgreSQL database to an interactive Power BI dashboard. The objective is to monitor core e-commerce metrics such as sales performance and logistics.
 
 ## Dashboard & Architecture Preview
 
@@ -17,7 +17,7 @@ This repository contains the documentation, configuration files, and the `.pbix`
 
 ### 3. Data Model (Star Schema)
 ![Data Model](assets/model.png)
-*Relational structure designed for optimal query rendering and DAX measure performance.*
+*Relational structure designed for query performance and DAX measure efficiency – one-to-many relationships between fact and dimension tables.*
 
 ## Data Pipeline
 
@@ -28,7 +28,7 @@ This repository contains the documentation, configuration files, and the `.pbix`
 ### 2. Data Engineering & ETL (Power Query)
 * **Data Cleaning:** Standardized text strings for product categories and formatted data types.
 * **Missing Values Management:** Handled `NULL` categories without row deletion to maintain the integrity of global financial KPIs.
-* **Referential Integrity:** Resolved missing key relationships to accurately map orphaned records in the product category translation table, and customers geoloacations.
+* **Referential Integrity:** Resolved missing key relationships to accurately map orphaned records in the product category translation table, and customers geolocations.
 
 ### 3. Data Modeling
 * Connected multiple Fact tables (Orders, Order Items, Payments) with Dimension tables (Products, Geolocation, Time).
@@ -36,6 +36,11 @@ This repository contains the documentation, configuration files, and the `.pbix`
 ### 4. DAX Calculations
 * **Financials:** `Total Revenue`, `Average Order Value (AOV)`, and `Total Freight` (aggregated at the order-item level).
 * **Logistics:** `On-Time Delivery Rate` comparing actual delivery timestamps against estimated delivery dates.
+
+## Key Insights
+- The São Paulo region generates 37.5% of total revenue and accounts for nearly 43% of all orders.
+- Delivery delays are concentrated in the Alagoas region.
+- The **Health & Beauty** category generates the highest revenue.
 
 ## Repository Structure
 ```text
