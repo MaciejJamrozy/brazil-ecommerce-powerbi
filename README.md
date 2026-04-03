@@ -1,6 +1,6 @@
 # Olist E-Commerce Analytics
 
-**[Interactive Dashboard on Power BI Service](https://app.powerbi.com/view?r=eyJrIjoiOTI0ZDM2ODgtOTg5NC00MTFkLTllYjUtZTQ0ZDBmZWE2NzFlIiwidCI6IjgwYjEwMzNmLTIxZTAtNGE4Mi1iYmMwLWYwNWZkY2NkM2JjOCIsImMiOjl9)** | **[Dataset Source](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)**
+🔗**[Interactive Dashboard on Power BI Service](https://app.powerbi.com/view?r=eyJrIjoiOTI0ZDM2ODgtOTg5NC00MTFkLTllYjUtZTQ0ZDBmZWE2NzFlIiwidCI6IjgwYjEwMzNmLTIxZTAtNGE4Mi1iYmMwLWYwNWZkY2NkM2JjOCIsImMiOjl9)** 🔗 | **[Dataset Source](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)**
 
 ## Project Overview
 This repository contains the documentation, configuration files, and the `.pbix` source file for an end-to-end data analytics project. The project processes the Brazilian E-Commerce Public Dataset by Olist, moving from raw data storage in a PostgreSQL database to an interactive Power BI dashboard. The objective is to monitor core e-commerce metrics such as sales performance and logistics.
